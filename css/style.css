@@ -57,6 +57,7 @@ a {
 }
 
 .section__text {
+  max-width: 60ch;
   margin: 20px 0 10px;
   line-height: 1.6;
 }
@@ -179,6 +180,7 @@ body {
   position: absolute;
   bottom: 20px;
   transform: scale(0.8);
+  color: var(--clr-secondary-accent);
 }
 
 /* HOME SECTION */
@@ -194,4 +196,23 @@ body {
   position: relative;
   max-width: 37.5rem;
   z-index: 10;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 66.75rem) {
+  .home__image {
+    display: none;
+  }
+
+  .logo {
+    top: 0.625rem;
+    left: 1rem;
+    font-size: var(--fs-600);
+  }
+
+  .section__title {
+    font-size: var(--fs-600);
+    line-height: 1.3;
+  }
 }
