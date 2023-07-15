@@ -35,6 +35,11 @@ html {
   scroll-behavior: smooth;
 }
 
+img {
+  width: 100%;
+  display: block;
+}
+
 li {
   list-style: none;
 }
@@ -187,7 +192,7 @@ body {
   color: var(--clr-secondary-accent);
 }
 
-/* HOME SECTION */
+/* HOME PAGE */
 
 .home__image {
   position: absolute;
@@ -202,7 +207,7 @@ body {
   z-index: 10;
 }
 
-/* SERVICES SECTION */
+/* SERVICES PAGE */
 
 .section__services {
   display: flex;
@@ -241,6 +246,48 @@ body {
   color: var(--clr-neutral-400);
 }
 
+/* WORK PAGE */
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1.25rem;
+}
+
+.portfolio .portfolio__item {
+  position: relative;
+  width: 15.625rem;
+  height: 15.625rem;
+  margin: 1rem;
+}
+
+.item__action {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.item__action a {
+  display: inline-block;
+  color: var(--clr-neutral-100);
+  text-decoration: none;
+  border: 1px solid var(--clr-neutral-100);
+  padding: 0.3125rem 0.9375rem;
+}
+
+.item__action:hover {
+  opacity: 0;
+}
+
 /* MEDIA QUERIES */
 
 @media (max-width: 66.75rem) {
@@ -267,5 +314,9 @@ body {
 @media (max-width: 30rem) {
   .services {
     grid-template-columns: 1fr;
+  }
+
+  .service {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   }
 }
