@@ -35,11 +35,6 @@ html {
   scroll-behavior: smooth;
 }
 
-img {
-  width: 100%;
-  display: block;
-}
-
 li {
   list-style: none;
 }
@@ -286,6 +281,72 @@ body {
 
 .item__action:hover {
   opacity: 0;
+}
+
+/* CONTACT PAGE */
+
+.contact {
+  position: relative;
+  width: 100%;
+  margin-top: 3.125rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contact__form {
+  position: relative;
+  background: var(--clr-neutral-200);
+  width: calc(100% - 25rem);
+  padding: 3.75rem 2.5rem 1.25rem;
+}
+
+.contact__form form {
+  width: 100%;
+}
+
+.contact__form .row {
+  width: 100%;
+  display: flex;
+}
+
+.contact__form .form__input {
+  width: 50%;
+  margin: 0 0.625rem;
+}
+
+.form__input--full {
+  width: 100%;
+  margin: 0 0.625rem;
+}
+
+.contact__form .row input,
+.contact__form .row textarea {
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  color: var(--clr-main-text);
+  background: transparent;
+  width: 100%;
+  padding: 0.75rem;
+  outline: none;
+  font-weight: 300;
+  margin: 0.625rem 0;
+  resize: none;
+}
+
+.contact__form .row textarea {
+  height: 9.375rem;
+}
+
+.form__submit {
+  background-color: var(--clr-neutral-400);
+  color: var(--clr-neutral-100);
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  border: 0;
+  width: 100%;
 }
 
 /* MEDIA QUERIES */
